@@ -60,9 +60,11 @@ export default async function LineDetailPage({ params }: PageProps) {
             <p className="text-text-secondary">
               {line.termini[0]} ↔ {line.termini[1]}
             </p>
-            <p className="text-sm text-text-muted mt-1">
-              Opened {formatDate(line.opened)}
-            </p>
+            {line.opened && (
+              <p className="text-sm text-text-muted mt-1">
+                Opened {formatDate(line.opened)}
+              </p>
+            )}
           </div>
         </div>
 

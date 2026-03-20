@@ -54,6 +54,7 @@ const statusConfig: Record<StationStatus | RailcarStatus, { label: string; varia
   "under-construction": { label: "Under Construction", variant: "warning" },
   retired: { label: "Retired", variant: "error" },
   testing: { label: "Testing", variant: "info" },
+  disabled: { label: "Planned", variant: "default" },
 };
 
 export function StatusBadge({ status, className }: StatusBadgeProps) {

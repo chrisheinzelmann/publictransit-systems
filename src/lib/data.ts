@@ -52,7 +52,7 @@ export async function getAllSystems(): Promise<TransitSystem[]> {
 // Lines data
 export async function getLines(systemId: string): Promise<Line[]> {
   const data = await loadJSON<{ lines: Line[] }>(`${systemId}/lines.json`);
-  return data.lines;
+  return data.lines.filter((line) => line.status !== "disabled");
 }
 
 export async function getLine(systemId: string, lineId: string): Promise<Line | undefined> {

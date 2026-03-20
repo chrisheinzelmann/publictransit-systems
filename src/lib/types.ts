@@ -1,6 +1,6 @@
 // Transit System Types
 
-export type StationStatus = "active" | "closed" | "under-construction";
+export type StationStatus = "active" | "closed" | "under-construction" | "disabled";
 export type RailcarStatus = "active" | "retired" | "testing";
 export type EntranceAccessibility = "elevator" | "escalator" | "stairs-only";
 export type DistanceUnit = "km" | "mi";
@@ -53,11 +53,11 @@ export interface Line {
   name: string;
   color: string;
   colorHex: string;
-  opened: string;
+  opened?: string;
   status: StationStatus;
   stations?: string[];
   stationCount?: number;
-  termini: [string, string];
+  termini: [string, string] | [];
   length: number;
   description: string;
 }
