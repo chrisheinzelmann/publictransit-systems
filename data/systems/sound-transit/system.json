@@ -9,12 +9,12 @@
   "website": "https://www.soundtransit.org",
   "overview": "Sound Transit operates regional express bus, light rail, and commuter rail services in the central Puget Sound region of Washington state. The Link light rail system connects Seattle, Bellevue, and surrounding communities.",
   "stats": {
-    "totalStations": 25,
+    "totalStations": 45,
     "totalLines": 3,
     "annualRidership": "48.2 million",
-    "trackMiles": 33,
+    "trackMiles": 51,
     "dailyRidership": "142,000",
-    "trackLength": 33,
+    "trackLength": 51,
     "distanceUnit": "mi"
   },
   "colors": {
@@ -49,8 +49,23 @@
     },
     {
       "date": "2024-03-30",
-      "title": "East Link Opens",
-      "description": "2 Line (East Link) opens, connecting Seattle to Bellevue and Redmond across Lake Washington."
+      "title": "2 Line Eastside Starter Opens",
+      "description": "2 Line (East Link) begins service between South Bellevue and Redmond Technology, serving 8 stations on the Eastside."
+    },
+    {
+      "date": "2024-08-30",
+      "title": "Lynnwood Link Extension",
+      "description": "1 Line extends north to Lynnwood City Center, adding Shoreline South/148th, Shoreline North/185th, Mountlake Terrace, and Lynnwood City Center stations."
+    },
+    {
+      "date": "2025-05-10",
+      "title": "Downtown Redmond Link Extension",
+      "description": "2 Line extends east from Redmond Technology to Downtown Redmond, adding Marymoor Village and Downtown Redmond stations."
+    },
+    {
+      "date": "2026-03-28",
+      "title": "Crosslake Connection Opens",
+      "description": "The 2 Line Crosslake Connection opens, linking the downtown Seattle tunnel to the Eastside via I-90 with new Judkins Park and Mercer Island stations. The 2 Line now runs the full route from Lynnwood to Downtown Redmond."
     }
   ]
 }

@@ -21,10 +21,10 @@
       "colorHex": "#007CAD",
       "opened": "2024-03-30",
       "status": "active",
-      "termini": ["South Bellevue", "Redmond Technology"],
-      "length": 14.5,
-      "stationCount": 10,
-      "description": "The 2 Line (formerly East Link) connects Seattle to Bellevue and Redmond, crossing Lake Washington on the I-90 floating bridge. It serves the Eastside tech corridor."
+      "termini": ["Lynnwood", "Downtown Redmond"],
+      "length": 35.3,
+      "stationCount": 25,
+      "description": "The 2 Line (formerly East Link) runs from Lynnwood to Downtown Redmond, sharing the downtown Seattle tunnel with the 1 Line before crossing Lake Washington on the I-90 floating bridge via the Crosslake Connection. It serves the Eastside tech corridor including Bellevue and Redmond."
     },
     {
       "id": "t-line",

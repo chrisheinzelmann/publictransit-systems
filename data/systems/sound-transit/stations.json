@@ -92,9 +92,9 @@
       ]
     },
     {
-      "id": "university-street",
+      "id": "symphony",
       "systemId": "sound-transit",
-      "name": "University Street",
+      "name": "Symphony",
       "lines": [
         "1-line",
         "2-line"
@@ -111,10 +111,10 @@
         "escalator",
         "fare-vending"
       ],
-      "description": "University Street station serves the downtown Seattle financial district, providing access to numerous office buildings and the Seattle Art Museum.",
+      "description": "Symphony station (formerly University Street) serves the downtown Seattle financial district, providing access to Benaroya Hall, numerous office buildings, and the Seattle Art Museum.",
       "entrances": [
         {
-          "id": "university-street-1",
+          "id": "symphony-1",
           "name": "Entrance A1",
           "coordinates": {
             "lat": 47.6079287,
@@ -125,7 +125,7 @@
           ]
         },
         {
-          "id": "university-street-2",
+          "id": "symphony-2",
           "name": "Entrance C",
           "coordinates": {
             "lat": 47.6071105,
@@ -136,7 +136,7 @@
           ]
         },
         {
-          "id": "university-street-3",
+          "id": "symphony-3",
           "name": "Entrance B",
           "coordinates": {
             "lat": 47.6076285,
@@ -147,7 +147,7 @@
           ]
         },
         {
-          "id": "university-street-4",
+          "id": "symphony-4",
           "name": "Entrance A2",
           "coordinates": {
             "lat": 47.6078453,
@@ -862,7 +862,8 @@
       "systemId": "sound-transit",
       "name": "Capitol Hill",
       "lines": [
-        "1-line"
+        "1-line",
+        "2-line"
       ],
       "opened": "2016-03-19",
       "status": "active",
@@ -918,7 +919,8 @@
       "systemId": "sound-transit",
       "name": "University of Washington",
       "lines": [
-        "1-line"
+        "1-line",
+        "2-line"
       ],
       "opened": "2016-03-19",
       "status": "active",
@@ -986,7 +988,8 @@
       "systemId": "sound-transit",
       "name": "U District",
       "lines": [
-        "1-line"
+        "1-line",
+        "2-line"
       ],
       "opened": "2021-10-02",
       "status": "active",
@@ -1043,7 +1046,8 @@
       "systemId": "sound-transit",
       "name": "Roosevelt",
       "lines": [
-        "1-line"
+        "1-line",
+        "2-line"
       ],
       "opened": "2021-10-02",
       "status": "active",
@@ -1089,7 +1093,8 @@
       "systemId": "sound-transit",
       "name": "Northgate",
       "lines": [
-        "1-line"
+        "1-line",
+        "2-line"
       ],
       "opened": "2021-10-02",
       "status": "active",
@@ -1169,7 +1174,8 @@
       "systemId": "sound-transit",
       "name": "Shoreline South/148th",
       "lines": [
-        "1-line"
+        "1-line",
+        "2-line"
       ],
       "opened": "2024-08-30",
       "status": "active",
@@ -1192,7 +1198,8 @@
       "systemId": "sound-transit",
       "name": "Shoreline North/185th",
       "lines": [
-        "1-line"
+        "1-line",
+        "2-line"
       ],
       "opened": "2024-08-30",
       "status": "active",
@@ -1215,7 +1222,8 @@
       "systemId": "sound-transit",
       "name": "Mountlake Terrace",
       "lines": [
-        "1-line"
+        "1-line",
+        "2-line"
       ],
       "opened": "2024-08-30",
       "status": "active",
@@ -1238,7 +1246,8 @@
       "systemId": "sound-transit",
       "name": "Lynnwood City Center",
       "lines": [
-        "1-line"
+        "1-line",
+        "2-line"
       ],
       "opened": "2024-08-30",
       "status": "active",
@@ -1254,7 +1263,7 @@
         "parking",
         "bus-connection"
       ],
-      "description": "Lynnwood City Center is the current northern terminus of the 1 Line, featuring a major transit center with 1,900-stall park-and-ride and connections to Community Transit and Sound Transit Express buses.",
+      "description": "Lynnwood City Center is the northern terminus of both the 1 Line and 2 Line, featuring a major transit center with 1,900-stall park-and-ride and connections to Community Transit and Sound Transit Express buses.",
       "entrances": [
         {
           "id": "lynnwood-city-center-1",
@@ -1309,7 +1318,7 @@
       "lines": [
         "2-line"
       ],
-      "opened": "2024-03-30",
+      "opened": "2026-03-28",
       "status": "active",
       "coordinates": {
         "lat": 47.5955,
@@ -1331,7 +1340,7 @@
       "lines": [
         "2-line"
       ],
-      "opened": "2024-03-30",
+      "opened": "2026-03-28",
       "status": "active",
       "coordinates": {
         "lat": 47.579,
@@ -1591,6 +1600,52 @@
           ]
         }
       ]
+    },
+    {
+      "id": "marymoor-village",
+      "systemId": "sound-transit",
+      "name": "Marymoor Village",
+      "lines": [
+        "2-line"
+      ],
+      "opened": "2025-05-10",
+      "status": "active",
+      "coordinates": {
+        "lat": 47.6630,
+        "lng": -122.1215
+      },
+      "address": "SE Redmond Fall City Rd & 187th Ave NE, Redmond, WA 98052",
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "parking",
+        "bus-connection"
+      ],
+      "description": "Marymoor Village station serves the Marymoor neighborhood adjacent to Marymoor Park, one of King County's largest parks, with a 200-stall park-and-ride."
+    },
+    {
+      "id": "downtown-redmond",
+      "systemId": "sound-transit",
+      "name": "Downtown Redmond",
+      "lines": [
+        "2-line"
+      ],
+      "opened": "2025-05-10",
+      "status": "active",
+      "coordinates": {
+        "lat": 47.6740,
+        "lng": -122.1185
+      },
+      "address": "16580 NE 80th St, Redmond, WA 98052",
+      "features": [
+        "elevator",
+        "escalator",
+        "fare-vending",
+        "parking",
+        "bus-connection"
+      ],
+      "description": "Downtown Redmond is the eastern terminus of the 2 Line, serving Redmond's city center with a transit center and 1,400-stall park-and-ride garage."
     },
     {
       "id": "theater-district",

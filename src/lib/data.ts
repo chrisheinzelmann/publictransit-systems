@@ -558,7 +558,7 @@ const SOUND_TRANSIT_ROUTES: Record<string, string> = {
 // Maps search patterns to station IDs
 const SOUND_TRANSIT_STATION_PATTERNS: Array<{ pattern: RegExp; stationId: string }> = [
   { pattern: /\bwestlake\b/i, stationId: "westlake" },
-  { pattern: /\buniversity street\b/i, stationId: "university-street" },
+  { pattern: /\bsymphony\b|\buniversity street\b/i, stationId: "symphony" },
   { pattern: /\bpioneer square\b/i, stationId: "pioneer-square" },
   { pattern: /\binternational district|chinatown|int'l dist/i, stationId: "international-district" },
   { pattern: /\bstadium\b(?!\s*district)/i, stationId: "stadium" },
@@ -590,6 +590,8 @@ const SOUND_TRANSIT_STATION_PATTERNS: Array<{ pattern: RegExp; stationId: string
   { pattern: /\bbel-red|130th\b/i, stationId: "bel-red-130th" },
   { pattern: /\boverlake village\b/i, stationId: "overlake-village" },
   { pattern: /\bredmond technology\b/i, stationId: "redmond-technology" },
+  { pattern: /\bmarymoor\b/i, stationId: "marymoor-village" },
+  { pattern: /\bdowntown redmond\b/i, stationId: "downtown-redmond" },
   { pattern: /\bfederal way\b/i, stationId: "federal-way-downtown" },
   { pattern: /\bkent des moines\b/i, stationId: "kent-des-moines" },
   { pattern: /\bstar lake\b/i, stationId: "star-lake" },
