@@ -223,6 +223,7 @@ export default async function SystemPage({ params }: PageProps) {
                 key={station.id}
                 station={station}
                 systemId={systemId}
+                lines={lines}
                 compact
               />
             ))}

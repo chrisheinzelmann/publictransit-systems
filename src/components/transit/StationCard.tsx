@@ -2,18 +2,19 @@ import Link from "next/link";
 import { Card } from "@/components/ui/Card";
 import { StatusBadge } from "@/components/ui/Badge";
 import { LineIndicatorGroup } from "./LineIndicator";
-import type { Station } from "@/lib/types";
+import type { Station, Line } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { formatDate } from "@/lib/data";
 
 interface StationCardProps {
   station: Station;
   systemId: string;
+  lines?: Line[];
   className?: string;
   compact?: boolean;
 }
 
-export function StationCard({ station, systemId, className, compact = false }: StationCardProps) {
+export function StationCard({ station, systemId, lines, className, compact = false }: StationCardProps) {
   return (
     <Link href={`/${systemId}/stations/${station.id}`}>
       <Card hover className={cn("h-full", className)}>
@@ -26,7 +27,7 @@ export function StationCard({ station, systemId, className, compact = false }: S
 
         <div className="mb-3">
           <LineIndicatorGroup
-            lines={station.lines}
+            lines={lines ? station.lines.map(id => lines.find(l => l.id === id) || id) : station.lines}
             systemId={systemId}
             size="sm"
             linkable={false}

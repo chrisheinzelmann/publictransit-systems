@@ -103,6 +103,7 @@ export default async function LineDetailPage({ params }: PageProps) {
                 key={station.id}
                 station={station}
                 systemId={systemId}
+                lines={[line]}
                 compact
               />
             ))}

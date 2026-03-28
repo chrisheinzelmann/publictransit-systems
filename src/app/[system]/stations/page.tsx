@@ -69,6 +69,7 @@ export default async function StationsPage({ params, searchParams }: PageProps) 
                 key={station.id}
                 station={station}
                 systemId={systemId}
+                lines={lines}
               />
             ))}
           </div>
