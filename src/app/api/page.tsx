@@ -1,6 +1,7 @@
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/Card";
 import { Terminal, TerminalLine, TerminalOutput } from "@/components/ui/Terminal";
 import { Badge } from "@/components/ui/Badge";
+import { getAllSystems } from "@/lib/data";
 
 interface Endpoint {
   method: "GET";
@@ -170,7 +171,9 @@ function EndpointCard({ endpoint }: { endpoint: Endpoint }) {
   );
 }
 
-export default function APIDocumentationPage() {
+export default async function APIDocumentationPage() {
+  const systems = await getAllSystems();
+
   return (
     <div className="space-y-8">
       {/* Header */}
@@ -188,7 +191,7 @@ export default function APIDocumentationPage() {
       <Terminal title="Quick Start">
         <TerminalLine>curl https://publictransit.systems/api/systems</TerminalLine>
         <TerminalOutput>
-          {`{"data":[{"id":"wmata","name":"Washington Metropolitan Area Transit Authority",...}],"count":3}`}
+          {`{"data":[{"id":"wmata","name":"Washington Metropolitan Area Transit Authority",...}],"count":${systems.length}}`}
         </TerminalOutput>
         <TerminalLine prompt="$">curl https://publictransit.systems/api/systems/wmata/stations/metro-center</TerminalLine>
         <TerminalOutput>
@@ -253,18 +256,12 @@ export default function APIDocumentationPage() {
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="bg-bg-tertiary rounded p-3">
-              <code className="text-accent-primary">wmata</code>
-              <p className="text-sm text-text-muted mt-1">Washington Metro</p>
-            </div>
-            <div className="bg-bg-tertiary rounded p-3">
-              <code className="text-accent-primary">bart</code>
-              <p className="text-sm text-text-muted mt-1">San Francisco BART</p>
-            </div>
-            <div className="bg-bg-tertiary rounded p-3">
-              <code className="text-accent-primary">sound-transit</code>
-              <p className="text-sm text-text-muted mt-1">Seattle Link Light Rail</p>
-            </div>
+            {systems.map((system) => (
+              <div key={system.id} className="bg-bg-tertiary rounded p-3">
+                <code className="text-accent-primary">{system.id}</code>
+                <p className="text-sm text-text-muted mt-1">{system.name}</p>
+              </div>
+            ))}
           </div>
         </CardContent>
       </Card>
