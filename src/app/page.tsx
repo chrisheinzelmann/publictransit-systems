@@ -106,7 +106,7 @@ export default async function HomePage() {
               <p className="text-sm text-text-secondary">
                 Learn about data sources, contribute information, and explore the API.
               </p>
-              <Link href="/about" className="inline-block text-sm text-accent-secondary hover:underline font-mono">
+              <Link href="/docs/about" className="inline-block text-sm text-accent-secondary hover:underline font-mono">
                 View Documentation →
               </Link>
             </div>

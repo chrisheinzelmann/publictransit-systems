@@ -51,10 +51,10 @@ export function Header() {
             <NavLink href="/search" active={pathname === "/search"}>
               Search
             </NavLink>
-            <NavLink href="/api" active={pathname === "/api"}>
+            <NavLink href="/docs/api" active={pathname === "/docs/api"}>
               API
             </NavLink>
-            <NavLink href="/about" active={pathname === "/about"}>
+            <NavLink href="/docs/about" active={pathname === "/docs/about"}>
               About
             </NavLink>
           </nav>
